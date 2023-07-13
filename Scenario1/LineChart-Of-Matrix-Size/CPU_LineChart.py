@@ -5,6 +5,7 @@ import time
 sizes = [100, 200, 500, 1000, 2000]   # اندازه‌های مختلف ماتریس‌ها
 
 times = []
+
 for size in sizes:
     a_cpu = np.random.rand(size, size)
     b_cpu = np.random.rand(size, size)
@@ -15,6 +16,7 @@ for size in sizes:
 
     times.append(end_time - start_time)
 
+#نمایش زمان اجرای سی پی یو برای ضرب ماتریسی به صورت نمودار خطی
 plt.plot(sizes, times, marker='o')
 plt.title('CPU Execution Time for Matrix Multiplication')
 plt.xlabel('Matrix Size')

@@ -16,6 +16,7 @@ for size in sizes:
 
     times.append(end_time - start_time)
 
+#نمایش زمان اجرای جی پی یو برای ضرب ماتریسی به صورت نمودار خطی
 plt.plot(sizes, times, marker='o')
 plt.title('GPU Execution Time for Matrix Multiplication')
 plt.xlabel('Matrix Size')

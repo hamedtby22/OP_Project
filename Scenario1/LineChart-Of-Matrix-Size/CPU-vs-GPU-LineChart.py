@@ -7,6 +7,7 @@ sizes = [100, 200, 500, 1000, 2000]   # اندازه‌های مختلف مات�
 
 cpu_times = []
 gpu_times = []
+
 for size in sizes:
     a_cpu = np.random.rand(size, size)
     b_cpu = np.random.rand(size, size)
